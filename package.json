@@ -1,0 +1,30 @@
+{
+  "name": "hacker-news",
+  "version": "1.0.0",
+  "description": "Clone of Hacker news",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marutha/hacker-news.git"
+  },
+  "keywords": [
+    "hacker",
+    "news"
+  ],
+  "author": "Maru",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marutha/hacker-news/issues"
+  },
+  "homepage": "https://github.com/marutha/hacker-news#readme",
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.1.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "webpack": "^4.43.0"
+  }
+}
