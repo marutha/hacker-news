@@ -1,4 +1,5 @@
 import express from 'express';
+import helmet from 'helmet';
 import { join } from 'path';
 
 const configureDevelopment = (app) => {
@@ -37,7 +38,7 @@ const app = express();
 const isDevelopment = process.env.NODE_ENV === 'development';
 
 console.log('info', `Configuring server for environment: ${process.env.NODE_ENV}...`);
-
+app.use(helmet());
 app.set('port', process.env.PORT || 4000);
 
 if (isDevelopment) {
