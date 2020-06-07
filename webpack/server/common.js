@@ -25,13 +25,13 @@ module.exports = merge(common, {
                     {
                         loader: 'css-loader',
                         options: {
-                            modules: true,
-                            localIdentName: '[name]__[local]--[hash:base64:5]',
-                            exportOnlyLocals: true,
+                            modules: {
+                                localIdentName: '[name]__[local]--[hash:base64:5]',
+                            },
+                            onlyLocals: true,
                         },
                     },
                     'postcss-loader',
-                    'stylus-loader',
                 ],
             },
         ],

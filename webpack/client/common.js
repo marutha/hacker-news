@@ -19,12 +19,12 @@ module.exports = merge(common, {
                     {
                         loader: 'css-loader',
                         options: {
-                            modules: true,
-                            localIdentName: '[name]__[local]--[hash:base64:5]'
+                            modules: {
+                                localIdentName: '[name]__[local]--[hash:base64:5]',
+                            },
                         },
                     },
                     'postcss-loader',
-                    'stylus-loader',
                 ],
             },
         ],
